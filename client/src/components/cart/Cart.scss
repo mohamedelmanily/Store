@@ -1,0 +1,95 @@
+.cartProducts {
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    top: 80px;
+    right: 20px;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        font-size: 24px;
+        color: gray;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .cartProduct {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 10px;
+        justify-content: space-between;
+
+        .image {
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+
+        .details {
+            h2 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            p {
+                color: gray;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+        }
+
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        color: rgb(1, 186, 1);
+        font-weight: 600;
+    }
+
+     .check {
+        padding: 10px;
+        width: 200px;
+        gap: 15px;
+        background-color: #2879fe;
+        display: flex;
+        justify-content: center;
+        border: none;
+        color: white;
+        align-items: center;
+        font-weight: 500;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .delete {
+        color: red;
+        font-size: 30px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        transition: all ease .3s;
+        &:hover{
+            scale: 1.2;
+
+        }
+    }
+
+    .reset {
+        font-size: 14px;
+        color: red;
+        cursor: pointer;
+    }
+}

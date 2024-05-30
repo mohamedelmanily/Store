@@ -1,0 +1,66 @@
+// Contact.scss
+
+.contact {
+  background-color: #2879fe;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .mail {
+      display: flex;
+      margin-bottom: 15px;
+
+      input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 10px 20px;
+        color: white;
+        background: #333;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 10px;
+
+      svg {
+        font-size: 1.8rem;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
