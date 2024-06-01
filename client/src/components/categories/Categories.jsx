@@ -10,7 +10,7 @@ const Categories = () => {
             src="https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600"
             alt="clothes"
           />
-          <Link className="link" to="products/1">
+          <Link className="link" to="products/">
             <button>sale</button>
           </Link>
         </div>

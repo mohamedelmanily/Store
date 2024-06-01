@@ -16,7 +16,7 @@ const Products = () => {
     setmaxPrice(e.target.value);
   }
   // console.log(catId);
-  // console.log(data);
+  console.log(data);
   function handleChange(e) {
     const value = e.target.value;
     const isChecked = e.target.checked;
