@@ -21,16 +21,17 @@ const FeaturedProducts = ({ type }) => {
       <div className="bottom">
         {error ? (
           "there is Error"
-        ) : loading ? (
-          <div>
-               <div>
-            <Skeleton variant="rectangular" width={210} height={100} />
-            <Skeleton variant="text" width={120} height={30} />
-            <Skeleton variant="text" width={80} height={30} />
-          </div>
+        ) : loading ? 
+        Array.from({length: 8 }).map((_, index) =>(
+          <div key={index}>
+            <div >
+              <Skeleton variant="rectangular" width={210} height={100} />
+              <Skeleton variant="text" width={120} height={30} />
+              <Skeleton variant="text" width={80} height={30} />
+            </div>
 
-          </div>
-       
+          </div>)
+
         ) : (
           data && data.map((i) => <Card item={i} key={i.id} />)
         )}

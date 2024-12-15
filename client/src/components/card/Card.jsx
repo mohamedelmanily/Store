@@ -28,9 +28,9 @@ const Card = ({ item }) => {
         <h2>{item?.attributes.title}</h2>
         <div className="prices">
           <h3>
-           ${item ? (item.attributes.price + 15 ) : (<Skeleton variant="text" width={120} height={30} />)}
+           ${item ? (item.attributes.price + 15 ) : (5*<Skeleton variant="text" width={120} height={30} />)}
           </h3>
-          <h3>${item?item.attributes.price:(<Skeleton variant="text" width={80} height={30} />)}</h3>
+          <h3>${item?item.attributes.price:(5*<Skeleton variant="text" width={80} height={30} />)}</h3>
         </div>
       </div>
     </Link>

@@ -9,8 +9,8 @@ import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../cartReducer";
-import Alert from '@mui/material/Alert';
-import CheckIcon from '@mui/icons-material/Check';
+import Alert from "@mui/material/Alert";
+import CheckIcon from "@mui/icons-material/Check";
 const Product = () => {
   const productId = parseInt(useParams().id);
   const [count, setCount] = useState(1);
@@ -92,8 +92,12 @@ const Product = () => {
               <AddShoppingCartOutlined /> Add To Cart
             </button>
             {checkOut && (
-              <Alert style={{position:'absolute',top:'52%' ,right:'35%'}} icon={<CheckIcon fontSize="inherit" />} severity="success">
-               Your action was successful.
+              <Alert
+                style={{ position: "absolute", top: "52%", right: "35%" }}
+                icon={<CheckIcon fontSize="inherit" />}
+                severity="success"
+              >
+                Your action was successful.
               </Alert>
             )}
             <div className="links">

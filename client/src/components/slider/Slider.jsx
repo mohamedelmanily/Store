@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Slider.scss";
-import img1 from "../../../public/imgs/pexels-olly-842811.jpg";
-import img2 from "../../../public/imgs/pexels-rfera-432059.jpg";
-import img3 from "../../../public/imgs/pexels-1000hk-1496647.jpg";
+import img1 from "../../../public/imgs/1.jpg";
+import img2 from "../../../public/imgs/2.jpg";
+import img3 from "../../../public/imgs/3.jpg";
 import { EastOutlined, WestOutlined } from "@mui/icons-material";
 
 const Slider = () => {

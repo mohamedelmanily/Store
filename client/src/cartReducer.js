@@ -9,8 +9,10 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
+      //prevent adding same product (card) in the cart
       const item = state.products.find((item) => item.id === action.payload.id);
       if(item){
+        // لو منتج موجود قبل كده في الكارت
         item.count +=action.payload.count
       }
       else {
